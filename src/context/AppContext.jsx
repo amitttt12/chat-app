@@ -27,6 +27,9 @@ const AppContextProvider = (props) => {
                 navigate('/profile')
             }
 
+
+
+
             await updateDoc(userRef, {
                 lastSeen: Date.now()
             })
